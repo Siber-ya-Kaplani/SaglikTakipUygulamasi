@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/stepsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Adım"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:paddingTop="16dp" />
+
+        <!-- Su Takibi Başlığı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Günlük Su Takibi"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold" />
+
+        <!-- Su bardakları -->
+        <LinearLayout
+            android:id="@+id/waterLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView android:id="@+id/water1" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water2" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water3" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water4" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water5" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water6" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water7" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water8" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water9" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+            <ImageView android:id="@+id/water10" android:layout_width="32dp" android:layout_height="64dp" android:src="@drawable/ic_water_empty"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnAddWater"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_add_water"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Su Ekle"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
+
+</ScrollView>
