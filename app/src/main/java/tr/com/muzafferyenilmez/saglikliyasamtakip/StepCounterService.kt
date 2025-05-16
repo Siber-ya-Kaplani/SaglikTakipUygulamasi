@@ -18,6 +18,7 @@ class StepCounterService : Service(), SensorEventListener {
     private lateinit var sensorManager: SensorManager
     private var stepSensor: Sensor? = null
     private var previousTotalSteps = 0f
+
     private var currentSteps = 0f
 
     private lateinit var sharedPreferences: SharedPreferences
